@@ -54,6 +54,10 @@ html, body{
     gap: 10px;
 }
 
+.elem h3{
+    /* font-weight: 500; */
+}
+
 .box {
     color: rgb(49, 10, 95);
     font-weight: 700;
@@ -61,4 +65,31 @@ html, body{
     padding: 15px;
     background-color: #fff;
     border-radius: 5px;
+}
+
+#pbtm{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(86, 17, 107, 0.678);
+    color: white;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.bubble:hover{
+    background-color: rgba(32, 3, 43, 0.678);
+    cursor: pointer;
 }
