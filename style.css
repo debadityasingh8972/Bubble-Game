@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=6b668d&c2=b858a8&gt=l&gd=dtl
+    */
+    background: #6B668D;
+    background: linear-gradient(135deg, #6B668D, #B858A8);
+}
+
+#panel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#ptop{
+    width: 100%;
+    height: 100px;
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=6b668d&c2=1a0316&gt=l&gd=dtl
+    */
+    background: rgba(107, 102, 141, 1.0);
+    background: linear-gradient(135deg, rgba(107, 102, 141, 1.0), rgba(26, 3, 22, 1.0));
+}
+
