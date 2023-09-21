@@ -1,6 +1,6 @@
 var timer = 60;
 var score = 0;
-
+var hitrn;
 
 
 function countScore(){
@@ -9,8 +9,8 @@ function countScore(){
 }
 
 function getNewHit(){
-    var rn1 =  Math.floor(Math.random()*10);
-    document.querySelector("#hitval").textContent = rn1;
+    hitrn =  Math.floor(Math.random()*10);
+    document.querySelector("#hitval").textContent = hitrn;
 }
 
 function makeBubble(){
@@ -38,7 +38,12 @@ function runTimer(){
 
 document.querySelector("#pbtm")
 .addEventListener("click", function(dets) {
-    dets.target.textContent
+    var clickedNum = Number(dets.target.textContent);
+    if(clickedNum === hitrn){
+        countScore();
+        makeBubble();
+        getNewHit();
+    }
 })
 
 
