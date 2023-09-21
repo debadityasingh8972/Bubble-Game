@@ -1,3 +1,18 @@
+var timer = 60;
+var score = 0;
+
+
+
+function countScore(){
+    score += 10;
+    document.querySelector("#scoreval").textContent = score;
+}
+
+function getNewHit(){
+    var rn1 =  Math.floor(Math.random()*10);
+    document.querySelector("#hitval").textContent = rn1;
+}
+
 function makeBubble(){
     var clutter = "";
 
@@ -9,7 +24,6 @@ function makeBubble(){
     document.querySelector("#pbtm").innerHTML = clutter; 
 }
 
-var timer = 60;
 function runTimer(){
     var timer2 = setInterval(function(){
         if(timer > 0){
@@ -20,5 +34,15 @@ function runTimer(){
         }
     },1000);
 }
+
+
+document.querySelector("#pbtm")
+.addEventListener("click", function(dets) {
+    dets.target.textContent
+})
+
+
 runTimer();
 makeBubble();
+getNewHit();
+// countScore();
