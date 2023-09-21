@@ -31,6 +31,7 @@ function runTimer(){
             document.querySelector("#timerval").textContent = timer;
         } else {
             clearInterval(timer2);
+            document.querySelector("#pbtm").innerHTML = `<h1>Game Over!</h1>`;
         }
     },1000);
 }
